@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Remove some common IDE working directories
+.idea
+.vscode
+
+.DS_Store
