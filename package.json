@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/storx1/storx-npm"
+    "url": "https://github.com/StorXNetwork/storx-storage-sdk"
   },
   "keywords": [
     "webpack",
@@ -24,7 +24,7 @@
   ],
   "author": "Ashish Shetty",
   "license": "MIT",
-  "homepage": "https://gitlab.com/storx1/storx-npm",
+  "homepage": "https://github.com/StorXNetwork/storx-storage-sdk",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
