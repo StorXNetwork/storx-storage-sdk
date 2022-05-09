@@ -1,6 +1,6 @@
 {
   "name": "storx-storage-sdk",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "StorX Storage Node SDK",
   "main": "lib/storx-storage-sdk.js",
   "scripts": {
