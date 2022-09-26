@@ -18,7 +18,7 @@ export default function createFolder(apiKey, secretApiKey, body) {
     url: `${baseUrl}/storage/folder`,
     data: data,
     headers: {
-      'x-api-access-key': bodu.apiAccessKey,
+      'x-api-access-key': body.apiAccessKey,
     },
   };
 

@@ -10,7 +10,7 @@ export default function welcome(apiKey, secretApiKey, body) {
     method: 'get',
     url: `${baseUrl}/welcome`,
     headers: {
-      'x-api-access-key': bodu.apiAccessKey,
+      'x-api-access-key': body.apiAccessKey,
     },
   };
 

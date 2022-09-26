@@ -19,7 +19,7 @@ export default function moveFile(apiKey, secretApiKey, body) {
     url: url,
     data: data,
     headers: {
-      'x-api-access-key': bodu.apiAccessKey,
+      'x-api-access-key': body.apiAccessKey,
     },
   };
 

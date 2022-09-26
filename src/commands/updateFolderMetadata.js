@@ -16,7 +16,7 @@ export default function updateFolderMetadata(apiKey, secretApiKey, body) {
     url: `${baseUrl}/storage/folder/${body.folderId}/meta`,
     data: data,
     headers: {
-      'x-api-access-key': bodu.apiAccessKey,
+      'x-api-access-key': body.apiAccessKey,
     },
   };
 
