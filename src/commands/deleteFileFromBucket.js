@@ -10,7 +10,7 @@ export default function deleteFileFromBucket(apiKey, secretApiKey, body) {
     method: 'delete',
     url: `${baseUrl}/storage/bucket/${body.bucketId}/file/${body.fileId}`,
     headers: {
-      Authorization: body.token,
+      'x-api-access-key': body.apiAccessKey,
     },
   };
 

@@ -15,12 +15,13 @@ const StorxStorage = require('storx-storage-sdk');
 const storxStorageFunctions = StorxStorage();
 ```
 
+You can get the Access Key for the sdk and APIs from StorX's dev console.
 Quickly test that you can connect to the API with the following call:
 
 ```javascript
 storxStorageFunctions
   .welcome({
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -38,7 +39,7 @@ storxStorageFunctions
 storxStorageFunctions
   .getFolderById({
     folderId: '<folderId>', // string
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
     teamId: '<teamId>', // string (optional)
   })
   .then(result => {
@@ -56,7 +57,7 @@ storxStorageFunctions
   .createFolder({
     folderName: '<folderName>',   // string
     parentFolderId: '<parentFolderId>',  // string
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -72,7 +73,7 @@ storxStorageFunctions
   .updateFolderMetadata({
     folderId: '<folderId>', // string
     metadata: '<metadata>', // object
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -88,7 +89,7 @@ storxStorageFunctions
 storxStorageFunctions
   .deleteFolder({
     folderId: '<folderId>', // string
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -105,7 +106,7 @@ storxStorageFunctions
   .moveFolder({
     folderId: '<folderId>', // string
     destination: '<destinationId>', // string
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -127,7 +128,7 @@ storxStorageFunctions
       folder_id: '<folder Id>',
       name: '<file Name>'
     },
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -144,7 +145,7 @@ storxStorageFunctions
     data: '<file>', // file object
     folderId: '<folderId>', // string
     mnemonic: '<account mnemonic paraphrase>', // string
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -160,7 +161,7 @@ storxStorageFunctions
   .updateFileMetadata({
     fileId: '<fileId>', // string
     metadata: '<metadata>', // object
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -177,7 +178,7 @@ storxStorageFunctions
   .moveFile({
     fileId: '<fileId>', // string
     destination: '<destinationId>',
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -194,7 +195,7 @@ storxStorageFunctions
   .deleteFileFromFolder({
     fileId: '<fileId>', // string
     folderId: '<folderId>', // string
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -211,7 +212,7 @@ storxStorageFunctions
   .deleteFileFromBucket({
     fileId: '<fileId>', // string
     bucketId: '<bucketId>', // string
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);
@@ -230,7 +231,7 @@ storxStorageFunctions
     itemId: '<itemId>', // string
     mnemonic: '<mnemonic>', // string
     views: '<views>', // integer
-    token: 'Bearer <token>',
+    apiAccessKey: '<apiAccessKey>',
   })
   .then(result => {
     console.log(result);

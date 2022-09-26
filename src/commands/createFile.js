@@ -16,7 +16,7 @@ export default function createFile(apiKey, secretApiKey, body) {
     url: `${baseUrl}/storage/file`,
     data: data,
     headers: {
-      Authorization: body.token,
+      'x-api-access-key': body.apiAccessKey,
     },
   };
 

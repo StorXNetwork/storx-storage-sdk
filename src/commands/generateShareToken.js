@@ -17,7 +17,7 @@ export default function generateShareToken(apiKey, secretApiKey, body) {
     url: `${baseUrl}/storage/share/file/${body.itemId}`,
     data: data,
     headers: {
-      Authorization: body.token,
+      'x-api-access-key': body.apiAccessKey,
       'storx-mnemonic': body.mnemonic,
     },
   };
