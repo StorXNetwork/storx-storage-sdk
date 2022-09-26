@@ -16,7 +16,7 @@ export default function updateFileMetadata(apiKey, secretApiKey, body) {
     url: `${baseUrl}/storage/file/${body.fileId}/meta`,
     data: data,
     headers: {
-      Authorization: body.token,
+      'x-api-access-key': bodu.apiAccessKey,
     },
   };
 

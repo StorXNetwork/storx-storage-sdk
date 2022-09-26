@@ -10,7 +10,7 @@ export default function deleteFolder(apiKey, secretApiKey, body) {
     method: 'delete',
     url: `${baseUrl}/storage/folder/${body.folderId}`,
     headers: {
-      Authorization: body.token,
+      'x-api-access-key': bodu.apiAccessKey,
     },
   };
 
