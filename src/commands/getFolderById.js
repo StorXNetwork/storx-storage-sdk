@@ -16,7 +16,7 @@ export default function getFolderById(apiKey, secretApiKey, body) {
     method: 'get',
     url: url,
     headers: {
-      Authorization: body.token,
+      'x-api-access-key': body.apiAccessKey,
     },
   };
 

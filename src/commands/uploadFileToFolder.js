@@ -13,7 +13,7 @@ export default function uploadFileToFolder(apiKey, secretApiKey, body) {
     url: `${baseUrl}/storage/folder/${body.folderId}/upload`,
     data: data,
     headers: {
-      Authorization: body.token,
+      'x-api-access-key': body.apiAccessKey,
       'storx-mnemonic': body.mnemonic,
     },
   };
