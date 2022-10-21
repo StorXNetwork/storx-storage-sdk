@@ -21,7 +21,7 @@ export default function uploadFileToFolder(apiKey, secretApiKey, body) {
   return new Promise((resolve, reject) => {
     axios(config)
       .then(function (response) {
-        if (response.status !== 200) {
+        if (response.status > 399) {
           reject(
             new Error(
               `unknown server response while authenticating: ${response}`,
