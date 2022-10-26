@@ -154,6 +154,8 @@ storxStorageFunctions
   });
 ```
 
+#### Here data will be form data with file key name as `xfile`
+
 ### Update File Metadata
 
 ```javascript
