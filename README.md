@@ -243,9 +243,37 @@ storxStorageFunctions
   });
 ```
 
-### NOTE: getFileById and downloadEntityByToken are both download APIs. Hence, they wont have their functions and using those functions will return you empty object.
+### Download File
 
-### More to continue......
+```javascript
+storxStorageFunctions
+  .getFileById({
+    fileId: '<fileId>', // string
+    mnemonic: '<mnemonic>', // string
+    apiAccessKey: '<apiAccessKey>',
+  })
+  .then(result => {
+    console.log(result);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+```
+
+### Download Entity by Share Token
+
+```javascript
+storxStorageFunctions
+  .downloadEntityByToken({
+    token: '<token>', // string
+  })
+  .then(result => {
+    console.log(result);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+```
 
 # Dev Installation
 
