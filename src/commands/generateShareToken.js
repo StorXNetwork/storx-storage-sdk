@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { baseUrl } from '../constants';
+import { baseUrl, apiUrl } from '../constants';
 import { validateApiKeys } from '../util/validators';
 import { handleError } from '../util/errorResponse';
 import qs from 'query-string';
@@ -32,8 +32,10 @@ export default function generateShareToken(apiKey, secretApiKey, body) {
             ),
           );
         }
+        let responseData = response.data;
+        responseData.downloadUrl = `${apiUrl}/storage/share/${responseData.token}`;
         resolve({
-          result: response.data,
+          result: responseData,
         });
       })
       .catch(function (error) {
